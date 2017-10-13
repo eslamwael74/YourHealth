@@ -8,7 +8,7 @@
     android:orientation="vertical"
     android:clickable="true"
     android:fitsSystemWindows="true"
-    tools:context="com.example.eslamwael74.yourhealth.MainActivity">
+    tools:context="com.example.eslamwael74.yourhealth.Activity.MainActivity">
 
 
     <FrameLayout
