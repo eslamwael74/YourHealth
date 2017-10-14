@@ -5,4 +5,13 @@
     <string name="title_notifications">Notifications</string>
     <string name="profile">Profile</string>
     <string name="add">Add</string>
+    <string name="your_health">YOUR HEALTH</string>
+    <string name="dnt_have_acc">Don\'t Have An Account ?</string>
+    <string name="click_here">Click Here</string>
+    <string name="to_signup">To Sign Up</string>
+    <string name="your_health_history">Your Health History</string>
+    <string name="Disease">Disease</string>
+    <string name="medicine">Medicine</string>
+    <string name="doctor">Doctor</string>
+    <string name="date">Date</string>
 </resources>
