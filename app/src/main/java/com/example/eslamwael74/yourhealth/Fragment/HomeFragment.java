@@ -49,8 +49,10 @@ public class HomeFragment extends Fragment {
         healthHistories = new ArrayList<>();
 
         HealthHistory history = new HealthHistory("Panadol","ayHaga","Eslam","20/11/2017");
-        healthHistories.add(history);
 
+        for (int i = 0; i <55 ; i++) {
+            healthHistories.add(history);
+        }
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         homeAdapter = new HomeAdapter(healthHistories,getActivity());
         recyclerView.setAdapter(homeAdapter);

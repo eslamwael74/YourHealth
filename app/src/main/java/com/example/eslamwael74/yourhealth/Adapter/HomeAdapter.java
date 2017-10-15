@@ -18,39 +18,48 @@ import java.util.ArrayList;
  * Created by Eslam Wael on 10/14/2017.
  */
 
-public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.MyViewHolder>{
+public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.MyViewHolder> {
 
     FragmentActivity fragmentActivity;
     ArrayList<HealthHistory> healthHistories;
 
 
-    public HomeAdapter(ArrayList<HealthHistory> healthHistories, FragmentActivity fragmentActivity){
+    public HomeAdapter(ArrayList<HealthHistory> healthHistories, FragmentActivity fragmentActivity) {
         this.fragmentActivity = fragmentActivity;
         this.healthHistories = healthHistories;
     }
 
     @Override
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        return new HomeAdapter.MyViewHolder(LayoutInflater.from(fragmentActivity).inflate(R.layout.history_item,parent,false));
+        return new HomeAdapter.MyViewHolder(LayoutInflater.from(fragmentActivity)
+                .inflate(R.layout.history_item, parent, false));
     }
 
     @Override
     public void onBindViewHolder(MyViewHolder holder, int position) {
 
+        holder.tvDisease.setText(healthHistories.get(position).getDisease());
+        holder.tvMedicine.setText(healthHistories.get(position).getMedicine());
+        holder.tvDoctor.setText(healthHistories.get(position).getDoctor());
+        holder.tvDate.setText(healthHistories.get(position).getDate());
+
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return healthHistories.size();
     }
 
     public static class MyViewHolder extends RecyclerView.ViewHolder {
-        TextView textView;
+        TextView tvDisease, tvMedicine, tvDoctor, tvDate;
 
         public MyViewHolder(View itemView) {
             super(itemView);
 
-
+            tvDisease = itemView.findViewById(R.id.disease);
+            tvMedicine = itemView.findViewById(R.id.medicine);
+            tvDoctor = itemView.findViewById(R.id.doctor);
+            tvDate = itemView.findViewById(R.id.date);
 
 
         }

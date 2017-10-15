@@ -14,4 +14,11 @@
     <string name="medicine">Medicine</string>
     <string name="doctor">Doctor</string>
     <string name="date">Date</string>
+    <string name="add_health">Add Health Condition</string>
+    <string name="save">SAVE</string>
+    <string name="name">Name</string>
+    <string name="phone">Phone</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="update">UPDATE</string>
 </resources>

@@ -22,12 +22,10 @@ public class MainActivity extends AppCompatActivity {
     private BottomNavigationView navigation;
     private FragmentManager fragmentManager;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
 
         fragmentManager = getSupportFragmentManager();
         FragmentTransaction hTransaction = fragmentManager.beginTransaction();

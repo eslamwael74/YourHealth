@@ -10,8 +10,8 @@
     tools:context="com.example.eslamwael74.yourhealth.Activity.SplashActivity">
 
     <ImageView
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
         android:src="@color/cyan_44b6b4"
         />
 
@@ -20,7 +20,7 @@
         android:layout_height="wrap_content"
         android:text="@string/your_health"
         android:textColor="@color/gray_94989b"
-        android:textSize="30sp"
+        android:textSize="20sp"
         android:layout_marginTop="26dp"
         />
 
